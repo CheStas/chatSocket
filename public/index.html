@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>chat</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="wrap">
+          <div class="messages"></div>
+          <div class="typing"></div>
+          <input class="text" autocomplete="off" placeholder="type message here..." autofocus="true"/>
+          <button class="send-message">send</button>
+          <div class="usersList"></div>
+          <div class="enter">
+              <h1>Sign in to the chat</h1>
+              <input class="enter-input user-name" type="text" autofocus="true" placeholder="your name">
+              <input class="enter-input user-nick" type="text" placeholder="your nick name">
+              <p class="not-valid"></p>
+              <button class="enter-button">Sign in</button>
+          </div>
+      </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
